@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    html{ font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
+    .newdiv{
+      position: absolute;
+      width:200px;
+      top:50px;
+      left: 50px;
+    }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="css/common.css"  >
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.2.714/styles/kendo.material.min.css">
+    <link rel="stylesheet" href="css/mobilemin.css">
+    <script src="js/jquerymin.js"></script>
+    <script src="js/allminjs.js"></script>
+</head>
+<body>
+  <div class="newdiv">
+        <div id="example">
+            <div class="demo-section k-content">
+              <input id="datepicker" value="10/10/2011" style="width:100%"/>
+            </div>
+        <script>
+        var fd = $("#datepicker").kendoDatePicker({parseFormats:["dd/MM/yyyy"],
+        format: "dd/MM/yyyy"
+        }).data("kendoDatePicker");
+        fd.value("10/7/2014");
+        var value = fd.value();
+        </script>
+        </div>
+</div>
+</body>
+</html>

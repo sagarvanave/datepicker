@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function checkall()
+        {
+            var all=document.getElementById("checkvalue").value;
+            alert(all);
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="check1">
+    <input type="checkbox" id="check2">
+    <input type="checkbox" id="check3">
+    <input type="checkbox" id="check4">
+    <input type="checkbox" id="check5">
+    <input type="checkbox" id="check6">
+    <input type="checkbox" id="check7">
+    <input type="hidden" value="7" id="checkvalue"><br><br>
+    select All : <input type="checkbox" onclick="checkall()">
+</body>
+</html>
